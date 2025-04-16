@@ -1,0 +1,507 @@
+/* Login Page */
+
+.login-wraper {
+   min-height: 100%;
+   display: flex;
+   align-items: center;
+   padding: 20px 0;
+}
+
+.login-wraper:after {
+   position: fixed;
+   top: 0;
+   left: 0;
+   background: rgb(0 0 0 / 50%);
+   width: 100%;
+   height: 100%;
+   content: '';
+   backdrop-filter: blur(7px);
+}
+
+.login-wraper .container {
+   position: relative;
+   z-index: 1;
+}
+
+.loginInfo {
+   padding: 40px;
+   background: var(--clr-white);
+   border-radius: 10px;
+   box-shadow: 0 5px 30px rgb(0 0 0 / 30%);
+}
+
+.loginInfo .brandLogo img {
+   width: 80px;
+   border-radius: 100%;
+   box-shadow: 0 2px 10px rgb(0 0 0 / 30%);
+}
+
+.loginInfo .brandLogo {
+   text-align: center;
+   margin: 0 0 10px;
+}
+
+.loginTitle {
+   text-align: center;
+   margin: 0 0 25px;
+}
+
+.loginTitle h4 {
+   font-size: 24px;
+   font-weight: 600;
+   margin: 0 0 5px;
+}
+
+.loginTitle p {
+   font-size: 18px;
+   margin: 0;
+}
+
+.loginBtn {
+   text-align: center;
+   margin-top: 20px;
+   display: inline-flex;
+   justify-content: center;
+   width: 100%;
+}
+
+/* Login Page end */
+
+
+/* dashboard css  */
+
+.DataValues h5 {
+   margin: 0;
+   display: flex;
+   align-items: center;
+   line-height: normal;
+   font-size: 15px;
+   gap: 10px;
+   font-weight: 600;
+}
+
+.DataValues h5 span {
+   display: flex;
+   align-items: center;
+   color: var(--bs-success);
+   font-weight: 500;
+   gap: 5px;
+}
+
+.DataValues h5 span.decreased {
+   color: var(--bs-danger);
+}
+
+.DataValues h5 span i {
+   font-size: 12px;
+}
+
+.DataValues-details h6 {
+   font-size: 14px;
+   font-weight: 500;
+}
+
+#ProfitValueChart,
+#InventoryValue {
+   width: 100%;
+   height: 200px;
+}
+
+/* dashboard css end */
+
+/* invoicing  */
+
+.reportList-box {
+   height: 100%;
+}
+
+.reportList-box .card-header h6 {
+   font-size: 14px;
+}
+
+.reportList-info {
+   max-height: 200px;
+   overflow: auto;
+   padding: 16px;
+}
+
+.reportList {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   gap: 5px;
+   padding: 0 0 10px;
+   border-bottom: 1px solid var(--clr-input-border);
+   margin-bottom: 10px;
+}
+
+.reportList h6 {
+   font-size: 13px;
+   margin: 0;
+}
+
+.reportList:last-child {
+   margin: 0;
+   border: 0;
+   padding: 0;
+}
+
+.total-list h6 {
+   font-weight: bold;
+}
+
+.settingsUpdate-box {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 10px 15px;
+   border: 1px solid var(--clr-input-border);
+   border-radius: 2px;
+   gap: 15px;
+}
+
+.settingsUpdate-box .form-control {
+   font-size: 12px;
+   min-height: 32px;
+}
+
+/* invoicing end */
+
+/* Settings Page */
+
+.rightItems {
+   flex-wrap: unset;
+}
+
+.rightItems .custom-select {
+   min-width: 220px;
+}
+
+.NotificationConfiguration-setting {
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+}
+
+.NotificationConfiguration {
+   padding: 10px 15px;
+   background: var(--bglight);
+   border-radius: 5px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   border: 1px solid var(--clr-input-border);
+}
+
+.NotificationConfiguration h6 {
+   margin: 0;
+   font-size: 14px;
+}
+
+
+.ProductsTypes-grid {
+   display: flex;
+   align-items: center;
+   gap: 24px;
+   flex-wrap: wrap;
+}
+
+.ProductsTypes-grid .custom-checkbox,
+.ProductsTypes-grid .IncludedProducts-box {
+   min-width: calc(20% - 20px);
+   max-width: calc(20% - 20px);
+}
+
+.ProductsTypes-grid .custom-checkbox label {
+   padding: 10px 15px;
+   background: var(--bglight);
+   border: 1px solid var(--clr-input-border);
+   width: 100%;
+   min-width: 100%;
+   flex-direction: row-reverse;
+   justify-content: space-between;
+}
+
+.ProductsTypes-grid .custom-checkbox label:after {
+   left: auto;
+   right: 19px;
+}
+
+.ProductsTypes-grid .custom-checkbox input:checked+label {
+   border-color: var(--clr-primary);
+}
+
+.ProductsTypes-grid .custom-checkbox label span {
+   text-overflow: ellipsis;
+   white-space: nowrap;
+   overflow: hidden;
+   font-size: 14px;
+}
+
+.IncludeProducts {
+   padding: 20px 15px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 10px;
+}
+
+.IncludeProducts h6 {
+   margin: 0;
+}
+
+.IncludedProducts-box {
+   padding: 10px 15px;
+   background: var(--bglight);
+   border: 1px solid var(--clr-input-border);
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 10px;
+}
+
+.IncludedProducts-box span {
+   text-overflow: ellipsis;
+   white-space: nowrap;
+   overflow: hidden;
+   font-size: 14px;
+}
+
+.IncludedProducts-box .btn-sm.iconBtn {
+   width: 20px;
+   min-width: 20px;
+   height: 20px;
+   min-height: 20px;
+   border-radius: 2px;
+}
+
+.centerSwitch {
+   display: flex;
+   justify-content: center;
+}
+
+.tblInput .form-control {
+   min-height: 30px;
+}
+
+.dateTime-input {
+   display: flex;
+   gap: 5px;
+}
+
+.saveCards-container {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 18px;
+}
+
+.creditCard-box {
+   display: inline-flex;
+   width: calc(33% - 10px);
+}
+
+.creditCard-box input {
+   display: none;
+}
+
+.creditCard-details {
+   width: 100%;
+   background: var(--bglight);
+   border-radius: 10px;
+   overflow: hidden;
+   position: relative;
+   cursor: pointer;
+}
+
+.creditCard-details:after {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   clip-path: polygon(100% 0%, 100% 100%, 35% 100%, 60% 0%);
+   opacity: 0.6;
+   background: linear-gradient(180deg, rgba(255, 255, 255, 0.50) 0%, rgba(128, 128, 128, 0.2) 100%);
+   pointer-events: none;
+}
+
+.creditCard-details .chipInfo,
+.creditCard-details .cardBrand,
+.creditCard-details .cardInfo {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.creditCard-body {
+   padding: 20px;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+
+.creditCard-details .cardNumber {
+   display: flex;
+   gap: 10px;
+}
+
+.creditCard-details h6 {
+   font-size: 14px;
+   font-weight: bold;
+}
+
+.creditCard-details p,
+.creditCard-details h6 {
+   margin: 0;
+}
+
+.creditCard-details .validCCV {
+   display: flex;
+   gap: 20px;
+}
+
+.creditCard-details .validCCV .validThru,
+.creditCard-details .validCCV .CCV-info {
+   display: flex;
+   gap: 5px;
+   align-items: baseline;
+}
+
+.creditCard-details .validCCV .CCV-info {
+   gap: 10px;
+}
+
+.creditCard-details .validCCV p {
+   font-size: 8px;
+}
+
+.creditCard-details .validCCV h6 {
+   font-size: 14px;
+   font-weight: bold;
+   line-height: normal;
+}
+
+.creditCard-details .cardInfo {
+   padding: 10px 20px;
+   background: var(--clr-input-border);
+}
+
+.creditCard-details .cardInfo button {
+   position: relative;
+   z-index: 1;
+}
+
+.creditCard-details .cardInfo h6 {
+   font-size: 13px;
+   font-weight: 600;
+}
+
+.creditCard-box input:checked + .creditCard-details,
+.creditCard-box input:checked + .creditCard-details .cardInfo {
+   background: linear-gradient(180deg, rgba(31,59,179,1) 0%, rgba(141,154,207,1) 100%);
+}
+
+.creditCard-box input:checked + .creditCard-details p,
+.creditCard-box input:checked + .creditCard-details h6 {
+   color: var(--clr-white);
+}
+
+.creditCard-box input:checked + .creditCard-details .chipInfo img {
+   filter: invert(1);
+}
+
+.creditCard-box input:checked + .creditCard-details .cardBrand img.whiteCard {
+   filter: brightness(100);
+}
+
+.creditCard-box input:checked + .creditCard-details:after {
+   opacity: 0.1;
+}
+
+/* Settings Page end */
+
+/* Product  */
+
+.bottomSet {
+   height: 100%;
+   display: flex;
+   align-items: flex-end;
+}
+
+.bottomSet label {
+   min-height: 40px;
+}
+
+.product-proccess h6 {
+   font-size: 14px;
+}
+
+.products-variants {
+   display: flex;
+   align-items: center;
+   gap: 5px;
+}
+
+.products-variants .variants-info {
+   display: flex;
+   align-items: center;
+   gap: 5px;
+}
+
+.products-variants h6 {
+   margin: 0;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 5px;
+   align-items: center;
+}
+
+.badge-outline-info {
+   border: 1px solid #0dcaf0;
+   color: #0dcaf0;
+   background: transparent !important;
+   text-transform: capitalize;
+   box-shadow: none;
+}
+
+.badges-variants {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 10px;
+   align-items: center;
+   margin-top: 10px;
+}
+
+.refresh-icon {
+   font-size: 18px;
+   animation: rotate-animation 1s infinite linear;
+   color: var(--clr-primary);
+}
+
+@keyframes rotate-animation {
+	0% {
+		transform: rotate(0deg);
+  }
+  50% {
+		transform: rotate(180deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.proccess-status .done {
+   color: var(--bs-success);
+}
+
+
+@media (max-width: 1366px) {
+   .SyncingLogs-tblPop {
+      max-height: 400px;
+   }
+}
+
+
+/* Product  */

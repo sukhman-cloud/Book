@@ -1,0 +1,292 @@
+@media (max-width: 1180px) {
+
+   .multiInput-group,
+   .ProductsTypes-grid {
+      gap: 15px;
+   }
+
+   .ProductsTypes-grid .custom-checkbox,
+   .ProductsTypes-grid .IncludedProducts-box {
+      min-width: calc(33% - 8px);
+      max-width: calc(33% - 8px);
+   }
+
+   .creditCard-box {
+      width: calc(50% - 10px);
+   }
+}
+
+
+@media (max-width: 991.98px) {
+
+   /* For Layout */
+
+   .brandLogo img {
+      width: 50px;
+      border-radius: 100%;
+   }
+
+   .menu-navigation {
+      width: fit-content;
+      flex-direction: row-reverse;
+      gap: 20px;
+   }
+
+   .menu-items {
+      gap: 20px;
+   }
+
+   .toggleSwitch {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      align-items: flex-end;
+      justify-content: center;
+   }
+
+   .toggleSwitch span {
+      margin: 0;
+   }
+
+   .sidebar {
+      top: 0;
+      left: 0;
+      border-radius: 0 10px 10px 0;
+      height: 100%;
+      transform: translateX(-300px);
+   }
+
+   header,
+   .sidebar-collapsed header {
+      width: 100%;
+      left: 0;
+   }
+
+   footer {
+      width: 100%;
+   }
+
+   .mainBody,
+   .sidebar-collapsed .mainBody {
+      width: 100%;
+   }
+
+   .sidebar-collapsed .sidebar {
+      width: 250px;
+      transform: translateX(0);
+   }
+
+   .sidebar-collapsed .sidebar-brandLogo img {
+      width: 70px;
+   }
+
+   .sidebar-collapsed .sidebar-menus li a {
+      padding: 8px 15px;
+   }
+
+   .sidebar-collapsed .sidebar-header {
+      padding: 15px;
+   }
+
+   .sideOverlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: var(--clr-dark);
+      z-index: -1;
+      transition: all 0.3s ease-in-out;
+      opacity: 0;
+   }
+
+   .sidebar-collapsed .sideOverlay {
+      z-index: 998;
+      opacity: 0.5;
+   }
+
+   .sidebar-collapsed .sidebar-menus li a span {
+      display: flex;
+   }
+
+   .overflow-hidden-md {
+      overflow: hidden;
+   }
+
+   .sidebar-collapsed .sidebar-menus li.active:after,
+   .sidebar-collapsed .sidebar-menus li.active:before {
+      display: block;
+   }
+
+   .menu-items li .top-searchBox .searchBox:focus,
+   .menu-items li .form-control {
+      min-width: 160px;
+      max-width: 160px;
+   }
+
+   .sidebar-collapsed .sidebar-menus li a.collapse-menu::after {
+      opacity: 1;
+   }
+
+   /* For Layout end */
+
+   .menu-items li.top-searchBox .searchBox:focus {
+      min-width: 160px;
+      max-width: 160px;
+   }
+
+   footer p {
+      text-align: center;
+   }
+}
+
+
+@media (max-width: 767.98px) {
+
+   header {
+      padding: 0;
+      box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+   }
+
+   .header-navigation {
+      padding: 15px;
+      border-radius: 0;
+   }
+
+   .menu-items li.StoreMenu,
+   .menu-items li.top-searchBox {
+      display: none;
+   }
+
+   .container {
+      padding-left: 15px;
+      padding-right: 15px;
+   }
+
+   .menu-navigation {
+      gap: 15px;
+   }
+
+   .mainBody {
+      margin-top: 70px;
+      padding: 15px;
+   }
+
+   .card {
+      border-radius: 10px;
+   }
+
+   .card-header,
+   .modal-header {
+      padding: 15px;
+      border-radius: 10px 10px 0 0 !important;
+      flex-wrap: wrap;
+      gap: 15px;
+   }
+
+   .card-body,
+   .modal-body {
+      padding: 15px;
+   }
+
+   .pageTitle h2 {
+      letter-spacing: 0;
+   }
+
+   footer {
+      padding: 0 15px 15px;
+   }
+
+   .dataTables_wrapper .row:first-child,
+   .dataTables_wrapper .row:last-child {
+      gap: 15px;
+   }
+
+   .dataTables_wrapper .row:first-child>*,
+   .dataTables_wrapper .row:last-child>* {
+      padding: 0;
+      width: 100%;
+   }
+
+   .dataTables_filter label {
+      justify-content: flex-start;
+   }
+
+   .dataTables_wrapper .dataTables_length label select {
+      border: 0;
+      border-bottom: 1px solid var(--clr-input-border);
+      background-position: right;
+      padding-right: 20px;
+      width: fit-content;
+   }
+
+   .dataTables_filter label input {
+      padding: 3px 0;
+      border: 0;
+      border-bottom: 1px solid var(--clr-input-border);
+   }
+
+   .modal-dialog {
+      padding: 5px;
+   }
+
+   .loginInfo {
+      padding: 15px;
+   }
+
+   .brandLogo img {
+      width: 40px;
+   }
+
+   .menu-items .profile-menu {
+      width: 38px;
+      height: 38px;
+   }
+
+   .footer-content {
+      justify-content: center;
+   }
+
+   .pageTitle {
+      margin: 0 0 15px;
+   }
+
+   .multiInput-group {
+      flex-wrap: wrap;
+      gap: 15px;
+   }
+
+   .reportList-info,
+   .table-verticalScrolled {
+      max-height: fit-content;
+   }
+
+   .multiInput-group .custom-checkbox {
+      width: 100%;
+   }
+
+   .rightItems {
+      flex-wrap: wrap;
+   }
+
+   .ProductsTypes-grid .custom-checkbox,
+   .ProductsTypes-grid .IncludedProducts-box {
+      min-width: 100%;
+      max-width: 100%;
+   }
+
+   .ChoosePlan-radio .radioBox {
+      width: 100%;
+   }
+
+   .ChoosePlan-radio .radioBox label {
+      width: 100%;
+      justify-content: center;
+   }
+}
+
+@media (max-width: 567.98px) {
+   .creditCard-box {
+      width: 100%;
+   }
+}
