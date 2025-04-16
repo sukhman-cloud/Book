@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use Livewire\Volt\Volt;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\CourseController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -29,5 +30,10 @@ Route::post('/addCategory', [CategoryController::class, 'insertCategory'])->name
 Route::delete('/category/delete/{id}', [CategoryController::class, 'deleteCategory'])->name('categories.destroy');
 Route::get('/category/edit/{id}', [CategoryController::class, 'editCategory']);
 Route::post('/category/update/{id}', [CategoryController::class, 'updateCategory']);
+
+Route::get('/course',[CourseController::class, 'fetchCourseData']);
+Route::post('/addCourse', [CourseController::class, 'insertCourseData'])->name('addCourse');
+Route::get('/course/edit/{id}', [CourseController::class, 'editCourse']);
+Route::delete('/course/delete/{id}', [CourseController::class, 'deleteCourse']);
 
 require __DIR__.'/auth.php';
