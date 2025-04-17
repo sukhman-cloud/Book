@@ -43,25 +43,24 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                @foreach ($course as $courses)
+                                                @foreach ($course as $index => $courses)
                                                     <tr>
-                                                        <td>{{ $courses->id }}</td>
+                                                    <td>{{ $index + 1 }}</td>
                                                         <td>{{ $courses->course_name }}</td>
                                                         <td>{{ $courses->course_abbrivation}}</td>
                                                         <td>{{ $courses->total_semester}}</td>
                                                         <td>
                                                             <div class="action-btns">
-                                                            <button type="button" class="btn btn-sm iconBtn btn-primary"
-                                                                data-bs-toggle="modal" data-bs-target="#AddCourse"
-                                                                id="editCourse" onclick="editCourse({{ $courses->id }})">
-                                                                <i class="material-icons">edit</i>
-                                                            </button>
+                                                                <button type="button" class="btn btn-sm iconBtn btn-primary"
+                                                                    data-bs-toggle="modal" data-bs-target="#AddCourse"
+                                                                    id="editCourse" onclick="editCourse({{ $courses->id }})">
+                                                                    <i class="material-icons">edit</i>
+                                                                </button>
 
                                                                 <form id="deleteCourseForm" style="display:inline;">
                                                                     @csrf
                                                                     @method('DELETE')
-                                                                    <button type="button" style="position: relative;
-    top: 7px;" class="btn btn-sm btn-danger" onclick="deleteCourse({{ $courses->id }})">
+                                                                    <button type="button" style="position: relative; top: 7px;" class="btn btn-sm btn-danger" onclick="deleteCourse({{ $courses->id }})">
                                                                         <i class="material-icons">delete</i>
                                                                     </button>
                                                                 </form>
