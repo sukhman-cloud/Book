@@ -3,7 +3,11 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-    $('#UsersListTable').DataTable();
+    $('#UsersListTable').DataTable({
+        columnDefs: [
+            { targets: "_all", defaultContent: ""}
+        ]
+    });
 });
 
 $(document).ready(function () {

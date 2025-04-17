@@ -41,12 +41,11 @@
                                                     <th>category_abbrivation</th>
                                                     <th class="text-end">Actions</th>
                                                 </tr>
-                                            </thead>
-
+                                            </thead>    
                                             <tbody>
-                                                @foreach ($category as $categoryes)
+                                                @foreach ($category as $index => $categoryes)
                                                     <tr>
-                                                        <td>{{ $categoryes->id }}</td>
+                                                        <td>{{ $index + 1 }}</td>
                                                         <td>{{ $categoryes->category_name }}</td>
                                                         <td>{{ $categoryes->category_abbrivation }}</td>
                                                         <td>
@@ -61,7 +60,7 @@
                                                                     @csrf
                                                                     @method('DELETE')
                                                                     <button style="position: relative;
-    top: 7px;" type="button" class="btn btn-sm btn-danger" onclick="deleteCategory({{ $categoryes->id }})">
+        top: 7px;" type="button" class="btn btn-sm btn-danger" onclick="deleteCategory({{ $categoryes->id }})">
                                                                         <i class="material-icons">delete</i>
                                                                     </button>
                                                                 </form>

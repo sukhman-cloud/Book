@@ -1,14 +1,14 @@
 @extends('link.header')
 <div class="sidebar">
     <div class="sidebar-header">
-        <a href="dashboard.html" class="sidebar-brandLogo">
-            <img src="img/spinning-logo.gif" alt="">
+        <a href="#" class="sidebar-brandLogo">
+        <img src="{{ asset('img/logoLib.jpg') }}" alt="Spinning Logo">
         </a>
     </div>
 
     <ul class="sidebar-menus" id="sidebarMenu">
         <li class="accordion-item">
-            <a href="dashboard.html">
+            <a href="#">
                 <i class="material-icons">grid_view</i>
                 <span>Dashboard</span>
             </a>
@@ -33,7 +33,7 @@
                     <span>Books</span>
                 </a>
 
-                <a href="approved-subscriptions.html" class="submenu">
+                <a href="{{ route('category') }}" class="submenu">
                     <i class="material-icons">fiber_manual_record</i>
                     <span>Category</span>
                 </a>
@@ -53,12 +53,12 @@
             </a>
 
             <div id="menu2" class="accordion-collapse collapse" data-bs-parent="#sidebarMenu">
-                <a href="orders-report.html" class="submenu">
+                <a href="{{ route('course') }}" class="submenu">
                     <i class="material-icons">fiber_manual_record</i>
                     <span>Course</span>
                 </a>
 
-                <a href="fulfillments-report.html" class="submenu">
+                <a href="{{ route('showSemester') }}" class="submenu">
                     <i class="material-icons">fiber_manual_record</i>
                     <span>Semester</span>
                 </a>
@@ -94,7 +94,7 @@
     <div class="header-navigation">
         <div class="brandLogo d-lg-none">
             <a href="dashboard.html">
-                <img src="img/spinning-logo.gif" alt="">
+            <img src="{{ asset('img/logoLib.jpg') }}" alt="Spinning Logo">
             </a>
         </div>
 
@@ -146,7 +146,7 @@
                     <li>
                         <a class="dropdown-item" href="messages.html">
                             <div class="icon-btn">
-                                <img src="img/profile-icon-2.jpg" alt="">
+                            <img src="{{ asset('img/logoLib.jpg') }}" alt="Spinning Logo">
                             </div>
                             <div class="details">
                                 <h6>Mark send you a message</h6>
@@ -157,7 +157,7 @@
                     <li>
                         <a class="dropdown-item" href="messages.html">
                             <div class="icon-btn">
-                                <img src="img/profile-icon-3.jpg" alt="">
+                            <img src="{{ asset('img/logoLib.jpg') }}" alt="Spinning Logo">
                             </div>
                             <div class="details">
                                 <h6>Cregh send you a message</h6>
@@ -169,7 +169,7 @@
                     <li>
                         <a class="dropdown-item" href="messages.html">
                             <div class="icon-btn">
-                                <img src="img/profile-icon-4.jpg" alt="">
+                            <img src="{{ asset('img/logoLib.jpg') }}" alt="Spinning Logo">
                             </div>
                             <div class="details">
                                 <h6>Profile picture updated</h6>
@@ -257,7 +257,7 @@
                     <button class="profileMenu-box dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
                     data-bs-auto-close="outside">
                     <div class="profile-menu">
-                        <img src="img/profile.jpeg" alt="">
+                    <img src="{{ asset('img/logoLib.jpg') }}" alt="Spinning Logo">
                     </div>
                     </button>
 
